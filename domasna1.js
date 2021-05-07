@@ -23,15 +23,15 @@ const dun = 5.15;
 // const dun = 6.18; when you change the constant it says we make a SyntaxError because const dun already has been declared.
 
 let student1 = {
-    fName = 'Vasil' , /*it finds syntax error that i dont know how to fix it*/
-    lName = 'Vasilev' ,
-    age = 23
+    fName: 'Dimitar' , 
+    lName: 'Milkov' ,
+    age: 23
 }
 
 let student2 = {
-    fName = 'Darko' ,
-    lName = 'Petrov' ,
-    age = 23
+    fName: 'Darko' ,
+    lName: 'Petrov' ,
+    age: 23
 }
 
 let students = [student1, student2]
