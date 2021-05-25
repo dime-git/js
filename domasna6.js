@@ -25,12 +25,6 @@ let bookC = {
     published: 1884
 }; 
 
-//2. Change the style of the book, depending on whether you have read the book. (hint: use loops) */
-
-
-
-
-
 
 
 
@@ -43,7 +37,42 @@ console.log('books author', `${books[0].author}` );
 console.log('books genre',  `${books[2].genre}`);
 console.log('book published', `${books[1].published}`); 
 
+// 2. Change the style of the book, depending on whether you have read the book. (hint: use loops) */
+
+for (let i = 0; i< books.length; i++) {
+    let p = document.createElement('p');
+    p.innerHTML = `${books[i].name} - ${books[i].author}`;
+    console.log(p, `${books[i].name} ${books[i].author}`);
+    document.body.appendChild(p);
+};
+
+books[0].read = false;
+books[1].read = true;
+books[2].read = true;
+
+let book_ul = document.createElement('ul');
+for (i = 0; i < books.length; i++) {
+    let book_li = document.createElement('li');
+    book_li.innerHTML = `${books[i].name} - ${books[i].author} - ${books[i].genre} - ${books[i].published}`;
+    console.log(book_li, `${books[i].name} - ${books[i].author} - ${books[i].genre} - ${books[i].published}`);
+    if(books[i].read){
+        book_li.style.color = 'green';
+    } else (books[i].read) 
+        book_ul.appendChild(book_li);
+    document.body.appendChild(book_ul);
+};
+
+
+
+
+// 3. On hover of the book details, change the style of the element.
+
+
+
 // 1. Set the following body style - font-family to 'Arial, sans-serif'.
+
+
+
 // 2. Fill in the values ​​in the span tags.
 
 
@@ -74,5 +103,9 @@ console.log(h.innerHTML);
 
 
 
+
+
 // 3. Add the listItem class to each li tag. (hint: use loops)
+
+
 //All elements with the listItem class should have white font color, red background color, and font size 14.
