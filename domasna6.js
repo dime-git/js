@@ -76,7 +76,7 @@ for (i = 0; i < books.length; i++) {
 // 2. Fill in the values ​​in the span tags.
 
 
-let element = document.getElementById('firstBook');
+/* let element = document.getElementById('firstBook');
 element.innerHTML = ('The Great Gatsby');
 console.log(element.innerHTML); 
 
@@ -86,7 +86,7 @@ console.log(elements.innerHTML);
 
 let el = document.getElementById('thirdBook');
 el.innerHTML = ('Adventures of Hucklberry Finn');
-console.log(el.innerHTML);
+console.log(el.innerHTML); */
 
 let n = document.getElementById('nickname');
 n.innerHTML = ('Dime');
@@ -106,6 +106,12 @@ console.log(h.innerHTML);
 
 
 // 3. Add the listItem class to each li tag. (hint: use loops)
+
+
+/*let list = document.getElementsByTagName('li');
+for (let i = 0; i < items.length; i++) {
+   list[i].className = 'listItem';
+}; */
 
 
 //All elements with the listItem class should have white font color, red background color, and font size 14.
